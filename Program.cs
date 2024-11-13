@@ -1,4 +1,6 @@
-﻿namespace SortingProj
+﻿using System.Runtime.InteropServices;
+
+namespace SortingProj
 {
     internal class Program
     {
@@ -14,6 +16,17 @@
                     arr[j + 1] = arr[j];
                 }
                 arr[j + 1] = curr;
+            }
+        }
+            static void OldMain(string[] args) {
+            int[] a = { 2, 3, 7, 8, 11, 20, 55 };
+            int[] b = { 0, 1, 9, 10, 13 };
+            int[] x = [];
+            int[] c = Sort.MergeArray(x);
+
+            foreach (int value in c)
+            {
+                Console.WriteLine(value);
             }
         }
     }
